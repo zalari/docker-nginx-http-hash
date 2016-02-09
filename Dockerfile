@@ -7,6 +7,6 @@ ENV IMAGE_VERSION 0.1.1
 ENV HASHFILENAME test.html
 ENV HASHVALUE jdsklsvnlkjsdv
 
-COPY init/run.sh /usr/local/bin
+ADD init/* /usr/local/bin
 
 CMD ["run.sh"]
